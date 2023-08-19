@@ -18,9 +18,12 @@ public class FindElementMethods {
 		
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver= new ChromeDriver();
+		driver.manage().window().maximize();
 		driver.get("https://gmail.com");
 		WebElement userEmail = driver.findElement(By.id("identifierId"));
 		userEmail.sendKeys("abc@gmail.com");
+		WebElement nextBtn= driver.findElement(By.xpath("//div[@id='playCaptchaButton']//child::span[@jsname='V67aGc']"));
+		nextBtn.click();
 
 	}
 
