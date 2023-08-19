@@ -21,8 +21,8 @@ public class FindElementMethods {
 		driver.manage().window().maximize();
 		driver.get("https://gmail.com");
 		WebElement userEmail = driver.findElement(By.id("identifierId"));
-		userEmail.sendKeys("abc@gmail.com");
-		WebElement nextBtn= driver.findElement(By.xpath("//div[@id='playCaptchaButton']//child::span[@jsname='V67aGc']"));
+		userEmail.sendKeys("ak2681993@gmail.com");
+		WebElement nextBtn= driver.findElement(By.xpath("//*[@id='identifierNext']/div/button/span"));
 		nextBtn.click();
 
 	}
