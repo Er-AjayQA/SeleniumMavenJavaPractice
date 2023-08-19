@@ -1,8 +1,9 @@
 package webDriverMethods;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver.Options;
+import org.openqa.selenium.WebDriver.Window;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 /**
@@ -17,7 +18,13 @@ public class ManageMethods {
 		
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver= new ChromeDriver();
-		driver.manage().window().maximize();
+		
+		/*
+		 * Options opt = driver.manage(); //manage() return type is "Options". Window
+		 * win = opt.window(); //window() return type is "Window". win.maximize();
+		 */
+		
+		driver.manage().window().maximize(); // We can write all the above code in single line like this.
 		driver.get("https://gmail.com");
 
 	}
