@@ -22,12 +22,12 @@ public class DummyRegistration {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver= new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(10));
 		driver.get("https://way2automation.com/way2auto_jquery/index.php");
 		driver.findElement(By.name("name")).sendKeys("Ajay Kumar");
-		driver.findElement(By.name("email")).sendKeys("abc@gmail.com");
-		WebElement submitBtn = driver.findElement(By.className("button"));	
-		submitBtn.click();
+		driver.findElement(By.name("email")).sendKeys("abc@gmail.com");	
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//input[@type='submit' and @class='button'])[2]"))).click();
 			
 
 	}
