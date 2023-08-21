@@ -7,8 +7,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
+
+/**
+ * @author Ajay Kumar
+ * This example shows how to get and print all the available menu options in dropDown.
+ * Here we use "getOptions()" method for this.
+ * "getOptions()" method is coming from "Select" class.
+ */
 
 public class PrintAllTheOptionOfDropdown {
 
