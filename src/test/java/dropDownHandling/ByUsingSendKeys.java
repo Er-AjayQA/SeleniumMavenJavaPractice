@@ -10,6 +10,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 /**
  * @author Ajay Kumar
  * This example shows how to select options from dropDown by using "sendKeys" method.
+ * Remember that "sendKeys" is not 100% accurate in case of dropDown.
  */
 
 public class ByUsingSendKeys {
