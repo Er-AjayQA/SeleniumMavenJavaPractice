@@ -25,7 +25,8 @@ public class GettingAllTheLinksOfWebPage {
 		System.out.println(allLinks.size());
 		for(WebElement link:allLinks)
 		{
-			System.out.println(link.getText());
+			System.out.println(link.getAttribute("href"));
+			//System.out.println(link.getText());
 		}
 
 	}
