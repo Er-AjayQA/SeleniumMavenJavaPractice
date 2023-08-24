@@ -23,6 +23,9 @@ public class RightOfAndLeftOfLocatorsTest {
 		WebElement userName= driver.findElement(RelativeLocator.with(By.xpath("//input[@name='username']")).toRightOf(By.xpath("//label[contains(.,'Username:')]")));
 		userName.sendKeys("AjayCloud");
 		
+//		WebElement passWord= driver.findElement(RelativeLocator.with(By.xpath("//label")).toLeftOf(By.xpath("//input[@name='password']")));
+//		System.out.println(passWord.getText());
+		
 		
 	}
 }
