@@ -22,11 +22,6 @@ public class BaseClassUtility {
 	public WebDriver driver= null;
 	
 	
-	public void beforeSuiteConfig()
-	{
-		
-	}
-	
 	/**
 	 * This method execute before all the class present inside the testSuite.
 	 * Before execution of class it automatically launch the desired browser and also load the baseUrl.
@@ -63,11 +58,6 @@ public class BaseClassUtility {
 		driver.get(url);
 	}
 	
-	public void beforeMethodConfig()
-	{
-		
-	}
-	
 	/**
 	 * This method execute after each class execution finished.
 	 * After class executed it will automatically quit the browser.
@@ -77,8 +67,4 @@ public class BaseClassUtility {
 		driver.quit();
 	}
 	
-	public void afterMethodConfig()
-	{
-		
-	}
 }
