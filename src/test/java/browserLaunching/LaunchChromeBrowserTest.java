@@ -14,14 +14,17 @@ import org.testng.annotations.Test;
  * This class contains method i.e. responsible to launch the "Chrome" browser.
  */
 
-public class LaunchChromeBrowser {
+public class LaunchChromeBrowserTest {
 
+	/**
+	 * This method is for launching the "Chrome" browser.
+	 */
 	@Test
-	public void launchChromeBrowser()
+	public void launchChromeBrowserTest()
 	{
 		System.setProperty("webdriver.chrome.driver", ".\\src\\test\\resources\\chromedriver.exe");
-		WebDriver driver= new ChromeDriver();
-		driver.get("https://google.com");
+		WebDriver driver= new ChromeDriver(); // Setup "Chrome" browser driver.
+		driver.get("https://google.com"); // launching the "Chrome" browser.
 
 	}
 
