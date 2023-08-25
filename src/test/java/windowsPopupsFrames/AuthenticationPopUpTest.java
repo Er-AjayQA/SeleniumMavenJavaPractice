@@ -1,6 +1,11 @@
 package windowsPopupsFrames;
 
+import org.openqa.selenium.HasAuthentication;
+import org.openqa.selenium.UsernameAndPassword;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 import genericUtilities.BaseClassUtility;
@@ -15,13 +20,24 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class AuthenticationPopUpTest extends BaseClassUtility{
 	
 	@Test
-	public void authenticationPopupTest()
+	public void authenticationPopupCredentialsUrlTest()
 	{
 		WebDriverManager.firefoxdriver().setup();
 		WebDriver driver= new FirefoxDriver();
 		wUtil.maximizeWindow(driver);
 		driver.get("https://admin:admin@the-internet.herokuapp.com/basic_auth");
-		
+	}
+	
+	@Test
+	public void authenticationPopUpRegisterMethodTest()
+	{
+		WebDriverManager.edgedriver().setup();
+		WebDriver driver= new EdgeDriver();
+		HasAuthentication hAuth= (HasAuthentication)driver;
+		hAuth.register(UsernameAndPassword.of("admin", "admin"));
+		driver.get("https://the-internet.herokuapp.com/basic_auth");
+		wUtil.maximizeWindow(driver);
+		wUtil.implicitWait(driver, 3);
 	}
 
 }
