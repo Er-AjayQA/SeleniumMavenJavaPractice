@@ -1,8 +1,3 @@
-/**
- * @author Ajay Kumar
- * The class in this package is used to launch Chrome browser.
- */
-
 package browserLaunching;
 
 import org.openqa.selenium.WebDriver;
