@@ -7,14 +7,21 @@ package browserLaunching;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import io.github.bonigarcia.wdm.WebDriverManager;
+import org.testng.annotations.Test;
+
+/**
+ * @author Ajay Kumar
+ * This class contains method i.e. responsible to launch the "Chrome" browser.
+ */
 
 public class LaunchChromeBrowser {
 
-	public static void main(String[] args) {
-		
-		WebDriverManager.chromedriver().setup();
+	@Test
+	public void launchChromeBrowser()
+	{
+		System.setProperty("webdriver.chrome.driver", ".\\src\\test\\resources\\chromedriver.exe");
 		WebDriver driver= new ChromeDriver();
+		driver.get("https://google.com");
 
 	}
 
