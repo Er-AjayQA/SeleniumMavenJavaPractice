@@ -17,5 +17,5 @@ public interface IConstantUtility {
 		 * This is "Property File Path".
 		 * This file contains all the configuration in the form of "Keys-Values" format.
 		 */
-		public static String propertyFilePath= ".\\src\\test\\resources\\PropertyFile.properties";
+		public static String propertyFilePath= ".\\src\\test\\resources\\Properties\\PropertyFile.properties";
 }
