@@ -23,4 +23,18 @@ public class PropertyFileUtility {
 		pro.load(file);
 		return pro.getProperty(property);
 	}
+	
+	/**
+	 * This method fetch and return the desired locator values from property file.
+	 * @param property
+	 * @return
+	 * @throws IOException
+	 */
+	public String fetchLocatorsFromORFile(String property) throws IOException
+	{
+		FileInputStream file= new FileInputStream(IConstantUtility.ObjectRepositorypropertyFilePath);
+		Properties pro= new Properties();
+		pro.load(file);
+		return pro.getProperty(property);
+	}
 }
