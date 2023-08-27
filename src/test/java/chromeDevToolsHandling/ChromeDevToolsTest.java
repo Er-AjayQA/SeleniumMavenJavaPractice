@@ -12,6 +12,7 @@ import org.openqa.selenium.devtools.v114.emulation.Emulation;
 import org.openqa.selenium.devtools.v114.security.Security;
 import org.testng.annotations.Test;
 import genericUtilities.BaseClassUtility;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 /**
  * @author Ajay Kumar
@@ -32,9 +33,6 @@ public class ChromeDevToolsTest extends BaseClassUtility {
 		
 		devTool.send(Security.enable());
 		devTool.send(Security.setIgnoreCertificateErrors(true));
-		
-//		devTool.send(Emulation.setGeolocationOverride(Optional.of(51.509865), Optional.of(-0.118092), Optional.of(100)));
-//		driver.get("https://mycurrentlocation.net/");
 	}
 	
 	@Test
