@@ -18,4 +18,10 @@ public interface IConstantUtility {
 		 * This file contains all the configuration in the form of "Keys-Values" format.
 		 */
 		public static String propertyFilePath= ".\\src\\test\\resources\\Properties\\PropertyFile.properties";
+		
+		/**
+		 * This is "Object Repository Property File Path".
+		 * This file contains all the Locators value in the form of "Keys-Values" format.
+		 */
+		public static String ObjectRepositorypropertyFilePath= ".\\src\\test\\resources\\Properties\\OR.properties";
 }
