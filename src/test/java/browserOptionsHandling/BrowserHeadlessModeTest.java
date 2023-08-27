@@ -18,13 +18,13 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  *This class contains methods for all browser to open in "Headless Mode". 
  */
 
-public class BrowserHeadlessTest {
+public class BrowserHeadlessModeTest {
 
 	/**
 	 * This method opens the "Chrome" browser in "Headless Mode".
 	 */
 	@Test
-	public void chromeBrowserHeadlessTest()
+	public void chromeBrowserHeadlessModeTest()
 	{
 		System.setProperty("webdriver.chrome.driver", ".\\src\\test\\resources\\chromedriver.exe");
 		ChromeOptions opt= new ChromeOptions();
@@ -38,7 +38,7 @@ public class BrowserHeadlessTest {
 	 * This method opens the "FireFox" browser in "Headless Mode".
 	 */
 	@Test
-	public void firefoxBrowserHeadlessTest()
+	public void firefoxBrowserHeadlessModeTest()
 	{
 		WebDriverManager.firefoxdriver().setup();
 		FirefoxOptions opt= new FirefoxOptions();
@@ -52,7 +52,7 @@ public class BrowserHeadlessTest {
 	 * This method opens the "Edge" browser in "Headless Mode".
 	 */
 	@Test
-	public void edgeBrowserHeadlessTest()
+	public void edgeBrowserHeadlessModeTest()
 	{
 		WebDriverManager.edgedriver().setup();
 		EdgeOptions opt= new EdgeOptions();
