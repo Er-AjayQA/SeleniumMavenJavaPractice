@@ -1,4 +1,4 @@
-package practicleImplementationOfCodes;
+package testCases;
 
 import java.util.List;
 import org.openqa.selenium.By;
