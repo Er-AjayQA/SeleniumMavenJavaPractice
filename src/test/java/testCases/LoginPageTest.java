@@ -23,8 +23,8 @@ public class LoginPageTest extends BaseClassUtility {
 		String userID= pUtil.fetchLocatorsFromORFile("UserName_ID");
 		String passwordID= pUtil.fetchLocatorsFromORFile("PassWord_ID");
 		String submitBtn= pUtil.fetchLocatorsFromORFile("SubmitBtn_ID");
-		String userName= pUtil.fetchPropertyFileData("LoginUserName");
-		String passWord= pUtil.fetchPropertyFileData("LoginPassWord");
+		String userName= eUtil.fetchExcelFileData("Sheet1", 2, 1);
+		String passWord= eUtil.fetchExcelFileData("Sheet1", 2, 2);
 		
 		driver.findElement(By.id(userID)).sendKeys(userName);
 		driver.findElement(By.id(passwordID)).sendKeys(passWord);
