@@ -8,8 +8,17 @@ import org.testng.annotations.Test;
 import genericUtilities.BaseClassUtility;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+/**
+ * @author AJay Kumar
+ * This class contains method for printing all dynamic webTable data.
+ */
+
 public class FetchingDataFromMoneyRediffTest extends BaseClassUtility{
 
+	/**
+	 * This method is used for fetching and printing all dynamic webTable data.
+	 * @throws IOException
+	 */
 	@Test
 	public void fetchingDataFromMoneyRediffTest() throws IOException
 	{
