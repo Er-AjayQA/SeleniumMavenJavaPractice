@@ -3,11 +3,12 @@
 <suite name="ReportNGSuite">
   <listeners>  
 	<listener class-name="genericUtilities.ListenersImplementation"/>
-	<listener class-name="org.uncommons.reportng.HTMLReporter"/>  
+	<listener class-name="org.uncommons.reportng.HTMLReporter"/>
   </listeners> 
   <test thread-count="5" name="Test">
 	<classes>  
-		<class name="ReportNGTest"></class>  
+		<class name="typesOfReports.ReportNGTest"></class> 
+		<class name="typesOfReports.TestNgReportsTest"></class>  
 	</classes>  
   </test> <!-- Test -->
 </suite> <!-- ReportNGSuite -->
