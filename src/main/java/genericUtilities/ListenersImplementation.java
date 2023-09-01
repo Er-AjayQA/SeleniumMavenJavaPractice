@@ -12,12 +12,11 @@ public class ListenersImplementation implements ITestListener{
 	}
 
 	public void onTestSuccess(ITestResult result) {
-		System.out.println("Test Successfully passed. Listeners working fine.");
+		System.out.println("<--Test is Passed-->.");
 	}
 
 	public void onTestFailure(ITestResult result) {
-		// TODO Auto-generated method stub
-		ITestListener.super.onTestFailure(result);
+		System.out.println("<--Test is failed-->.");
 	}
 
 	public void onTestSkipped(ITestResult result) {
